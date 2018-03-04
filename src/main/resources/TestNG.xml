@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href=""?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Facebook UI Automation TestSuite">
+<listeners>
+    <listener class-name="com.fbu.listener.ExtentReporterNG"/> 
+</listeners>
+	<test name="Facebook Ui Test">
+		<classes>
+			<class name = "com.fbu.qa.tests.LoginPageTest">
+			<methods>
+			<include name= "validateLoginTest" />
+			<include name= "validateNewAccount" />
+			<include name= "validateLoginPageTitle" />
+			</methods>
+			</class>
+			<class name = "com.fbu.qa.tests.HomePageTest"></class> 
+		</classes>
+	</test>
+</suite>
